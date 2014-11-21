@@ -42,3 +42,6 @@ local_settings.py
 setup.py
 ghostdriver.log
 scrapyd_settings.py
+
+#ipython notebook
+*.ipynb

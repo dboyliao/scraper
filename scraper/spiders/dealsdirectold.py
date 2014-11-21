@@ -60,9 +60,9 @@ class DealsDirectOldSpider(CrawlSpider):
     # Shipping Cost URL, string format param is pID
     SC_URL = u'http://www.dealsdirect.com.au/goldCalculateShipping.php?gold_postcode=2000&pID=%s'
 
-    def extract_xpath(self, hxs, name_xpath):
+    def extract_xpath(self, response, name_xpath):
         xpath = self.xpaths[name_xpath]
-        return hxs.select(xpath).extract()
+        return response.xpath(xpath).extract()
 
     def parse(self, response):
         ''' ''' # {{{
