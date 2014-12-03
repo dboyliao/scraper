@@ -45,3 +45,7 @@ scrapyd_settings.py
 
 #ipython notebook
 *.ipynb
+
+#json and log files
+*.json
+*.log
